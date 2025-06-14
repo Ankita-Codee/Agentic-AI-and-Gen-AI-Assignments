@@ -1,22 +1,33 @@
-🧪 KidSciBot: An AI-Powered Science Tutor for Kids 🚀
-🎯 What’s This Project About?
-KidSciBot is a friendly, AI-powered science tutor designed to spark curiosity in young minds! Whether kids are wondering about black holes, animal behaviors, volcanoes, or cool science experiments, KidSciBot delivers clear, kid-friendly explanations with the help of cutting-edge AI.
 
-Built to understand natural language questions and provide accurate, accessible answers, KidSciBot draws from trusted sources — including documents, the web, and its own trained knowledge — to ensure kids get the right facts in the right way.
+## 🎯 What is KidSciBot?
 
-🔧 Technologies I Used
-LangGraph
-For building a modular, agent-based workflow with flexible nodes and edges
+**KidSciBot** is an AI science tutor for kids that answers curious questions about space, animals, and experiments — all in simple, age-appropriate language.
 
-Google Gemini
-A powerful Large Language Model (LLM) for understanding and generating language
+It uses **LangGraph**, **Google Gemini**, **RAG**, and **web search** to find accurate, friendly answers from documents or live sources.
 
-Retriever-Augmented Generation (RAG)
-Combines LLMs with a document retriever to answer science questions based on stored PDFs
+## 🧠 Tech Behind the Bot
 
-Web Search Integration (Tavily)
-Keeps answers fresh by retrieving real-time info about current science events
+- **LangGraph**: Smart decision-making graph (like a mini brain)
+- **Gemini LLM**: Understands and generates natural language
+- **RAG + Chroma + HuggingFace**: Pulls info from scientific PDFs
+- **Tavily Web Search**: Gets current info from the internet
 
-Chroma Vector Store + HuggingFace Embeddings
-Organizes scientific documents for smart retrieval based on semantic similarity
+## 🤖 Agent vs LLM (Quickly)
 
+- LLM = Writes answers  
+- Agent = Chooses tools, routes queries, checks results  
+- Think: LLM writes email → Agent sends it too!
+
+## ⚙️ Flow Summary
+
+1. Classifies the question  
+2. Chooses between: PDF, LLM, or Web  
+3. Validates + simplifies answer for kids
+
+![Flow Diagram](path-to-diagram.png)
+
+## 🛠️ Setup
+
+```bash
+pip install langchain langgraph langchain-google-genai \
+langchain-huggingface chromadb pydantic tavily-python python-dotenv
