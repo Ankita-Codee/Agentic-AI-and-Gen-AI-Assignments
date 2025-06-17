@@ -17,10 +17,8 @@
 
 ## Workflow Visualization
 
-![KidSciBot Workflow](Flowchart_KidSciBot.png)
-
 *A flowchart showing KidSciBot’s smart decision-making pipeline.*
-
+<img src="iFlowchart_KidSciBot.png" alt="KidSciBot Workflow" width="600"/>
 ---
 
 ## Medium Blog
