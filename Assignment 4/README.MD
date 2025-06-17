@@ -18,6 +18,7 @@
 ## Workflow Visualization
 
 <img src="Flowchart_KidSciBot.png" alt="KidSciBot Workflow" width="600"/>
+
 ---
 
 ## Medium Blog
