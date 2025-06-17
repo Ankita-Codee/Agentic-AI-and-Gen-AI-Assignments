@@ -17,7 +17,7 @@
 
 ## Workflow Visualization
 
-![KidSciBot Workflow]('/Users/ankita/Desktop/Screenshot 2025-06-13 at 1.45.30 PM.png')
+![KidSciBot Workflow]('Flowchart_KidSciBot.png')
 
 *A flowchart showing KidSciBot’s smart decision-making pipeline.*
 
