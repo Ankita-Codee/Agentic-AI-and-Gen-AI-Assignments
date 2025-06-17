@@ -1,33 +1,42 @@
 
-## 🎯 What is KidSciBot?
+# KidSciBot
 
-**KidSciBot** is an AI science tutor for kids that answers curious questions about space, animals, and experiments — all in simple, age-appropriate language.
+**KidSciBot** is an intelligent science chatbot designed to provide kid-friendly answers to science questions. It uses a combination of Large Language Models (LLMs), Retriever-Augmented Generation (RAG) from science PDFs, and web search integration to deliver accurate and up-to-date responses.
 
-It uses **LangGraph**, **Google Gemini**, **RAG**, and **web search** to find accurate, friendly answers from documents or live sources.
+---
 
-## 🧠 Tech Behind the Bot
+## Features
 
-- **LangGraph**: Smart decision-making graph (like a mini brain)
-- **Gemini LLM**: Understands and generates natural language
-- **RAG + Chroma + HuggingFace**: Pulls info from scientific PDFs
-- **Tavily Web Search**: Gets current info from the internet
+- Classifies questions to determine if they are science-related.
+- Retrieves answers from embedded science PDF documents using RAG.
+- Fetches current event science news using web search.
+- Generates general answers with an LLM when needed.
+- Provides simple and easy-to-understand explanations suitable for children.
 
-## 🤖 Agent vs LLM (Quickly)
+---
 
-- LLM = Writes answers  
-- Agent = Chooses tools, routes queries, checks results  
-- Think: LLM writes email → Agent sends it too!
+## Workflow Visualization
 
-## ⚙️ Flow Summary
+![KidSciBot Workflow]('/Users/ankita/Desktop/Screenshot 2025-06-13 at 1.45.30 PM.png')
 
-1. Classifies the question  
-2. Chooses between: PDF, LLM, or Web  
-3. Validates + simplifies answer for kids
+*A flowchart showing KidSciBot’s smart decision-making pipeline.*
 
-![Flow Diagram](path-to-diagram.png)
+---
 
-## 🛠️ Setup
+## Medium Blog
 
-```bash
-pip install langchain langgraph langchain-google-genai \
-langchain-huggingface chromadb pydantic tavily-python python-dotenv
+For a detailed explanation and step-by-step tutorial, check out the Medium blog post:
+
+[🚀 KidSciBot — An Intelligent Science Tutor for Kids 📚🧒🔬](https://medium.com/@admane.ankita/kidscibot-an-intelligent-science-tutor-for-kids-327a73a81159)
+
+---
+
+## Technologies I Used 🔧
+
+* LangGraph — For designing a smart agent workflow with nodes & edges
+* Groq + DeepSeek LLM — Ultra-fast, open-weight LLM (deepseek-r1-distill-llama-70b) accessed via Groq for natural language understanding
+* Retriever-Augmented Generation (RAG) — For science answers using PDF documents stored in a vector database
+* Web Search Integration (Tavily)— To fetch fresh, current event info
+* Chroma Vector Store and HuggingFace Embeddings — To organize and retrieve scientific documents
+
+---
